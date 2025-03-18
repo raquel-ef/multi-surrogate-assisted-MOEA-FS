@@ -1,0 +1,14 @@
+SEED_VALUE = 1234                           # Random seed value
+DATASET_NAME = 'LaAljorra-NO2-WS7.arff'     # Name of the dataset to compute (with sliding window transformation applied)
+DATASET_SAVE_NAME = 'NO2WS7'                # Name of the dataset to save the results
+MODEL_NAME = 'NO2WS7-model-lstm.keras'      # Name of the surrogate model
+N_ATTRIB = 84                               # Number of attributes of the dataset
+N_STEPS = 7                                 # Number of h-steps ahead to compute
+N_SEEDS = 10                                # Number of runs
+N_JOBS = 8                                  # Number of jobs
+N_EVAL = 1000                               # Number of evaluations 
+POPULATION_SIZE = 50                        # Population size
+MAX_TIME = 160 * 60                         # Maximum run time of the MOEA
+N_NEURONS = 256                             # Number of neurons (for LSTM)
+BATCH_SIZE = 64                             # Batch size (for LSTM)
+EPOCHS = 100                                # Number of epochs (for LSTM)
